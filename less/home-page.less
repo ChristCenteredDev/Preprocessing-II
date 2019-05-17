@@ -27,6 +27,11 @@
         width: 100%;
         order: 0;
       }
+
+      @media @tablet {
+        width: 100%;
+        order: 0;
+      }
     }
 
     .img-content {
@@ -35,9 +40,20 @@
 
       img {
         border-radius: 10px;
+
+        @media (min-width: 501px) and @tablet {
+          width: 75%;
+          display: block;
+          margin: 0 auto;
+        }
       }
 
       @media @mobile {
+        width: 100%;
+        order: 1;
+      }
+
+      @media @tablet {
         width: 100%;
         order: 1;
       }

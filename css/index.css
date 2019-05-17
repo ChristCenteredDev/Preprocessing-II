@@ -249,6 +249,12 @@ img {
     order: 0;
   }
 }
+@media (max-width: 700px) {
+  .home .content-section .text-content {
+    width: 100%;
+    order: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -256,7 +262,20 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (min-width: 501px) and (max-width: 700px) {
+  .home .content-section .img-content img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    order: 1;
+  }
+}
+@media (max-width: 700px) {
   .home .content-section .img-content {
     width: 100%;
     order: 1;
