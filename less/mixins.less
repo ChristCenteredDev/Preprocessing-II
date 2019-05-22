@@ -1,1 +1,17 @@
 // Mixins in here
+.flex-mixin(@jc: center, @ai: center) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+}
+
+.btn-mixin(@color: green, @width: 80%) {
+  width: @width;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: @color;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
